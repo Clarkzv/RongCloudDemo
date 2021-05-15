@@ -13,7 +13,7 @@ android {
     sourceSets{
         main{
             jni.srcDirs = []
-            jniLibs.srcDirs = ['src/main/libs']
+            jniLibs.srcDirs = ['libs']
         }
     }
     buildTypes {
