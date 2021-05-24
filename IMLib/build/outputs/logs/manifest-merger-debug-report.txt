@@ -85,12 +85,12 @@ ADDED from D:\AndroidDemo\RongYunDemo\IMLib\AndroidManifest.xml:19:5-81
 		ADDED from D:\AndroidDemo\RongYunDemo\IMLib\AndroidManifest.xml:19:22-78
 application
 ADDED from D:\AndroidDemo\RongYunDemo\IMLib\AndroidManifest.xml:21:5-94:19
-meta-data#cpj2xarlc7isn
-ADDED from D:\AndroidDemo\RongYunDemo\IMLib\AndroidManifest.xml:24:9-26:46
+meta-data#RONG_CLOUD_APP_KEY
+ADDED from D:\AndroidDemo\RongYunDemo\IMLib\AndroidManifest.xml:24:9-26:45
 	android:value
-		ADDED from D:\AndroidDemo\RongYunDemo\IMLib\AndroidManifest.xml:26:13-43
+		ADDED from D:\AndroidDemo\RongYunDemo\IMLib\AndroidManifest.xml:26:13-42
 	android:name
-		ADDED from D:\AndroidDemo\RongYunDemo\IMLib\AndroidManifest.xml:25:13-41
+		ADDED from D:\AndroidDemo\RongYunDemo\IMLib\AndroidManifest.xml:25:13-46
 service#io.rong.imlib.ipc.RongService
 ADDED from D:\AndroidDemo\RongYunDemo\IMLib\AndroidManifest.xml:28:9-31:38
 	android:process
