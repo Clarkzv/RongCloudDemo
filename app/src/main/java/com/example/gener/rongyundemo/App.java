@@ -31,6 +31,7 @@ public class App extends Application {
 
     }
     private  String token = "AvDzvgR9NsUd2/4q0rY0zs/hSsm8Khf4neAFy/0kkd5MN+ClwEjwIxnNS3oOOLvQzR/VaRjvT8/C6qy/tB9H9z2T5bm4jOkQ";
+    private  String tokenJiangDaShuai = "XVkW2sTA/aNVlvSFfaNU5s/hSsm8Khf4neAFy/0kkd5MN+ClwEjwI3r9zdarJ3dGPjuedmzXrVpmVYvBnsKFLYFwo9+SjawN";
 
     /**
      * 初始化融云
@@ -46,7 +47,7 @@ public class App extends Application {
 //            AppContext.init(this);
             // 连接融云服务器
 //            RongYUtils.connect(this);
-            connect(token);
+            connect(tokenJiangDaShuai);
         }
     }
 

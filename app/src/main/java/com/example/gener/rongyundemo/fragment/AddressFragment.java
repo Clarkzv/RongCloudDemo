@@ -230,8 +230,10 @@ public class AddressFragment extends Fragment implements View.OnClickListener {
 //        });
 
         List<Friend> friendsList = new ArrayList<>();
-        Friend friend = new Friend("zIDknjp8U","浩浩",Uri.parse("http://7xogjk.com1.z0.glb.clouddn.com/zIDknjp8U1526431878366443115"));
+        Friend friend = new Friend("zIDknjp8U","浩浩",Uri.parse("http://7xogjk.com1.z0.glb.clouddn.com/zIDknjp8U1526431878366443115"),"浩浩");
+        Friend friend2 = new Friend("jiangdashuai","蒋大帅",Uri.parse("http://7xogjk.com1.z0.glb.clouddn.com/zIDknjp8U1526431878366443115"),"蒋大帅");
         friendsList.add(friend);
+        friendsList.add(friend2);
 
         updateFriendsList(friendsList);
     }
@@ -315,6 +317,7 @@ public class AddressFragment extends Fragment implements View.OnClickListener {
 //        intent.putExtra("type", CLICK_CONTACT_FRAGMENT_FRIEND);
 //        intent.putExtra("friend", friend);
 //        startActivity(intent);
+        RongIM.getInstance().startPrivateChat(getActivity(), friend.getUserId(), friend.getDisplayName());
     }
     /**
      * 根据输入框中的值来过滤数据并更新ListView

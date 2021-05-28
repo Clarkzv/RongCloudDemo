@@ -73,6 +73,8 @@
                     android:scheme="rong" />
             </intent-filter>
         </activity>
+
+        <!--会话界面-->
         <activity
             android:name=".ConversationActivity"
 
