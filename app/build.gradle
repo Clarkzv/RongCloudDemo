@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
+
         applicationId "com.example.gener.rongyundemo"
         minSdkVersion 24
         targetSdkVersion 27
@@ -22,6 +23,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+//    signingConfigs {
+//        debug {
+//            storeFile file('D:\\AndroidDemo\\RongYunDemo\\keystore\\rongTwo.jks')//签名文件路径
+//            storePassword "123456"
+//            keyAlias "rongTwo"
+//            keyPassword "123456"  //签名密码
+//        }
+//        release {
+//            storeFile file('D:\\AndroidDemo\\RongYunDemo\\keystore\\rongTwo.jks')//签名文件路径
+//            storePassword "123456"
+//            keyAlias "rongTwo"
+//            keyPassword "123456"  //签名密码
+//        }
+//    }
 }
 
 dependencies {
@@ -37,4 +53,7 @@ dependencies {
     //2、json数据解析的工具
     implementation 'com.google.code.gson:gson:2.8.0'
     implementation files('libs/fastjson-1.2.5.jar')
+
+
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
 }

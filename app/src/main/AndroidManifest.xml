@@ -119,6 +119,12 @@
                 android:resource="@xml/rc_file_path" />
         </provider>
 
+        <activity
+            android:name=".chatroom.ChatRoomOneActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+
 
     </application>
 
