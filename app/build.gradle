@@ -3,7 +3,6 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-
         applicationId "com.example.gener.rongyundemo"
         minSdkVersion 24
         targetSdkVersion 27
@@ -23,37 +22,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
-//    signingConfigs {
-//        debug {
-//            storeFile file('D:\\AndroidDemo\\RongYunDemo\\keystore\\rongTwo.jks')//签名文件路径
-//            storePassword "123456"
-//            keyAlias "rongTwo"
-//            keyPassword "123456"  //签名密码
-//        }
-//        release {
-//            storeFile file('D:\\AndroidDemo\\RongYunDemo\\keystore\\rongTwo.jks')//签名文件路径
-//            storePassword "123456"
-//            keyAlias "rongTwo"
-//            keyPassword "123456"  //签名密码
-//        }
-//    }
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':IMKit')
+
     //1、添加okhttp的依赖
     implementation 'com.squareup.okhttp3:okhttp:3.9.1'
     //2、json数据解析的工具
     implementation 'com.google.code.gson:gson:2.8.0'
-    implementation files('libs/fastjson-1.2.5.jar')
-
-
-    implementation 'com.android.support:recyclerview-v7:27.1.1'
 }
