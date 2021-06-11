@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical" android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <fragment
-        android:id="@+id/conversationlist"
-        android:name="io.rong.imkit.fragment.ConversationListFragment"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_rong"
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp">
+
+    </android.support.v4.view.ViewPager>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33000000"
+        />
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_chat"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="会话"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="通讯录"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_chat_room"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="聊天室"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
 
 </LinearLayout>
